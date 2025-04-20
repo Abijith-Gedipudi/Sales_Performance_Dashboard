@@ -1,0 +1,3 @@
+Total Revenue = SUM(Sales[Revenue])
+Total Units Sold = SUM(Sales[UnitsSold])
+Total Sales = COUNTROWS(Sales)
