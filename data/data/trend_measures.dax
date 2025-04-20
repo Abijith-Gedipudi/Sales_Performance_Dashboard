@@ -1,0 +1,17 @@
+Monthly Revenue = 
+CALCULATE(
+    [Total Revenue],
+    DATESMTD(Sales[SaleDate])
+)
+
+Previous Month Revenue = 
+CALCULATE(
+    [Total Revenue],
+    PREVIOUSMONTH(Sales[SaleDate])
+)
+
+MoM Growth % = 
+DIVIDE(
+    [Total Revenue] - [Previous Month Revenue],
+    [Previous Month Revenue]
+)
